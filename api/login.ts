@@ -1,6 +1,6 @@
-import fetch from 'node-fetch'
+import type { VercelRequest, VercelResponse } from '@vercel/node'
 
-export default async (req, res) => {
+export default async (req: VercelRequest, res: VercelResponse) => {
   const r = await fetch('https://github.com/login/oauth/access_token', {
     method: 'POST',
     headers: {
