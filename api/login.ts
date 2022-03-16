@@ -1,4 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
+import fetch from 'node-fetch'
 
 export default async (req: VercelRequest, res: VercelResponse) => {
   const r = await fetch('https://github.com/login/oauth/access_token', {
