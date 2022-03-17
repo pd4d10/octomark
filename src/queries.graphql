@@ -1,0 +1,13 @@
+query items {
+  viewer {
+    repository(name: "octomark-store") {
+      issues(first: 20) {
+        nodes {
+          __typename
+          title
+          body
+        }
+      }
+    }
+  }
+}
