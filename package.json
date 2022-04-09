@@ -2,16 +2,20 @@
   "name": "octomark",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "npm run codegen && tsc && vite build",
-    "preview": "vite preview",
+    "dev": "norm",
+    "build": "norm build",
     "codegen": "graphql-codegen"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^2.6.2",
     "@graphql-codegen/typescript": "^2.4.7",
     "@graphql-codegen/typescript-operations": "^2.3.4",
     "@graphql-codegen/typescript-react-query": "^3.5.7",
+    "@norm/cli": "^0.4.31",
     "@octokit/graphql-schema": "^10.73.0",
     "@types/react": "^17.0.40",
     "@types/react-dom": "^17.0.13",
@@ -19,13 +23,7 @@
     "@vercel/node": "^1.13.0",
     "@vitejs/plugin-react": "^1.2.0",
     "graphql": "^16.3.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-query": "^3.34.16",
-    "react-router-dom": "^6.2.2",
-    "react-use": "^17.3.2",
-    "typescript": "^4.6.2",
-    "vite": "^2.8.6"
+    "typescript": "^4.6.2"
   },
   "dependencies": {
     "@types/node-fetch": "^2.6.1",
