@@ -1,0 +1,7 @@
+{
+  "name": "octomark-extension",
+  "private": true,
+  "dependencies": {
+    "@mozilla/readability": "^0.4.2"
+  }
+}
