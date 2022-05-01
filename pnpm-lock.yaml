@@ -59,12 +59,14 @@ importers:
       '@mozilla/readability': ^0.4.2
       '@types/turndown': ^5.0.1
       bytemd: ^1.13.1
+      github-markdown-css: ^5.1.0
       turndown: ^7.1.1
     devDependencies:
       '@bytemd/plugin-gfm': 1.13.1_bytemd@1.13.1
       '@mozilla/readability': 0.4.2
       '@types/turndown': 5.0.1
       bytemd: 1.13.1
+      github-markdown-css: 5.1.0
       turndown: 7.1.1
 
 packages:
@@ -2649,6 +2651,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       pump: 3.0.0
+    dev: true
+
+  /github-markdown-css/5.1.0:
+    resolution: {integrity: sha512-QLtORwHHtUHhPMHu7i4GKfP6Vx5CWZn+NKQXe+cBhslY1HEt0CTEkP4d/vSROKV0iIJSpl4UtlQ16AD8C6lMug==}
     dev: true
 
   /glob-parent/5.1.2:

@@ -6,6 +6,11 @@
     "build": "vite build"
   },
   "devDependencies": {
-    "@mozilla/readability": "^0.4.2"
+    "@bytemd/plugin-gfm": "^1.13.1",
+    "@mozilla/readability": "^0.4.2",
+    "@types/turndown": "^5.0.1",
+    "bytemd": "^1.13.1",
+    "github-markdown-css": "^5.1.0",
+    "turndown": "^7.1.1"
   }
 }

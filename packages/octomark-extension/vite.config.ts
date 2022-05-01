@@ -5,7 +5,7 @@ import webExtension from '@vite-preset/web-extension'
 export default defineConfig({
   build: {
     rollupOptions: {
-      input: ['src/content-script.ts'],
+      input: ['src/content-script.ts', 'preview.html'],
     },
   },
   plugins: [
@@ -15,7 +15,7 @@ export default defineConfig({
         manifest_version: 3,
         name: 'Octomark',
         version: '0.0.1',
-        permissions: ['activeTab', 'scripting'],
+        permissions: ['activeTab', 'scripting', 'tabs'],
         background: {
           service_worker: 'src/background.ts',
         },
