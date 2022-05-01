@@ -1,7 +1,11 @@
 {
   "name": "octomark-extension",
   "private": true,
-  "dependencies": {
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build"
+  },
+  "devDependencies": {
     "@mozilla/readability": "^0.4.2"
   }
 }
