@@ -4,6 +4,7 @@ import webExtension from '@vite-preset/web-extension'
 
 export default defineConfig({
   build: {
+    minify: false,
     rollupOptions: {
       input: ['src/content-script.ts', 'preview.html'],
     },

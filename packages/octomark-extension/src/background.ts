@@ -8,9 +8,13 @@ chrome.action.onClicked.addListener((tab) => {
 })
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  console.log(message)
+
   if (message.type === 'preview') {
     const url = new URL(chrome.runtime.getURL('preview.html'))
-    url.searchParams.set('content', message.content)
+    Object.entries(message.data).forEach(([key, value]) => {
+      url.searchParams.set(key, value as string)
+    })
 
     chrome.windows.create({
       url: url.toString(),
