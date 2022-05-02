@@ -10,10 +10,12 @@ const reader = new Readability(doc, {
 const article = reader.parse()
 // console.log(article)
 
-const md = turndown.turndown(article.content)
-// console.log(md)
+if (article) {
+  const md = turndown.turndown(article.content)
+  // console.log(md)
 
-chrome.runtime.sendMessage({
-  type: 'preview',
-  content: md,
-})
+  chrome.runtime.sendMessage({
+    type: 'preview',
+    content: md,
+  })
+}
